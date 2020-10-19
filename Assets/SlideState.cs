@@ -19,6 +19,13 @@ public class SlideState : CharacterStateBase
         "from in air state to ground state, player will transition to slide state.")]
     [SerializeField] protected float fromInAirMinSqrSpeed = 5f;
 
+    GroundState groundState;
+
+    protected void Awake ()
+    {
+        groundState = GetComponent<GroundState> ();
+    }
+
     public Vector3 DeltaPosition
     {
         get;
@@ -93,5 +100,13 @@ public class SlideState : CharacterStateBase
     public override float GetMovementDrag ()
     {
         return movementDrag;
+    }
+
+    protected void jump ()
+    {
+        Vector3 newVelocity = DeltaPosition + parent.Velocity;
+        newVelocity.y = Mathf.Sqrt (groundState.JumpHeight * 2f * groundState.Gravity);
+        setVelocity (newVelocity);
+        requestNewState<PlayerInAirState> ();
     }
 }

@@ -24,14 +24,4 @@ public class HeadAnimationController : MonoBehaviour
     {
         animator.SetTrigger(HardLandTrigger);
     }
-
-    public void AnimateWallRunLeft ()
-    {
-
-    }
-
-    public void AnimateWallRunRight ()
-    {
-        //transform.DOLocalRotate (transform.eulerAngles + )
-    }
 }

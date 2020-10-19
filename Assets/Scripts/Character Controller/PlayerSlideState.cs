@@ -1,10 +1,26 @@
-﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerSlideState : SlideState
 {
+    BurinkeruInputManager inputManager;
+
+    protected new void Awake ()
+    {
+        base.Awake ();
+
+        inputManager = BurinkeruInputManager.Instance;
+    }
+
+    public override void UpdateState ()
+    {
+        base.UpdateState ();
+
+        if (inputManager.IsCommandDown (BurinkeruInputManager.InputCommand.JUMP))
+        {
+            jump ();
+        }
+    }
+
     protected override Vector3 getDeltaPosition ()
     {
         Vector3 forwardDirection = parent.transform.forward;

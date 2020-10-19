@@ -6,6 +6,9 @@ using UnityEngine;
 [RequireComponent (typeof (PlayerInAirState))]
 public class CharacterControllerBase : MonoBehaviour
 {
+    public delegate void OnStateChangedEventHandler (CharacterStateBase newState, CharacterStateBase prevState);
+    public event OnStateChangedEventHandler OnStateChanged;
+
     [SerializeField] Camera fpsCamera;
 
     protected CharacterStateBase mainMovementState;
@@ -229,6 +232,7 @@ public class CharacterControllerBase : MonoBehaviour
         if (mainMovementState == null || stateType != mainMovementState.GetType ())
         {
             System.Type prevStateType = null;
+            CharacterStateBase prevState = mainMovementState;
 
             if (mainMovementState != null)
             {
@@ -248,6 +252,7 @@ public class CharacterControllerBase : MonoBehaviour
                 enterState (mainMovementState, prevStateType);
 
                 Debug.Log ("new state: " + newState.GetType ().ToString ());
+                OnStateChanged?.Invoke (mainMovementState, prevState);
             }
         }
     }

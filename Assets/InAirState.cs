@@ -15,6 +15,12 @@ public class InAirState : CharacterStateBase
     protected WallRunState wallRunState;
     protected BlinkState blinkState;
 
+    public Vector3 LastInAirVelocity
+    {
+        get;
+        protected set;
+    }
+
     public float Gravity
     {
         get { return gravity; }
@@ -65,7 +71,10 @@ public class InAirState : CharacterStateBase
         jumpCounter = 0;
     }
 
-    protected override void onExit () { }
+    protected override void onExit ()
+    {
+        LastInAirVelocity = parent.Velocity;
+    }
 
     public override float GetMovementSpeedFactor ()
     {

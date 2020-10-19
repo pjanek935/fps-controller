@@ -3,6 +3,9 @@
 [RequireComponent (typeof (CharacterControllerBase))]
 public class GroundState : CharacterStateBase
 {
+    public delegate void OnGroundInternalStateChangedEventHandler (GroundStateInternalState newGroundInternalState);
+    public event OnGroundInternalStateChangedEventHandler OnGroundInternalStateChanged;
+
     public enum GroundStateInternalState
     {
         NONE, RUN, CROUCH,
@@ -19,10 +22,30 @@ public class GroundState : CharacterStateBase
     protected SlideState slideState;
     protected BlinkState blinkState;
 
+    GroundStateInternalState groundStateInternalState = GroundStateInternalState.NONE;
+
+    public float JumpHeight
+    {
+        get { return jumpHeight; }
+    }
+
+    public float Gravity
+    {
+        get { return gravity; }
+    }
+
     public GroundStateInternalState InternalState
     {
-        get;
-        protected set;
+        get { return groundStateInternalState; }
+
+        set
+        {
+            if (value != groundStateInternalState)
+            {
+                groundStateInternalState = value;
+                OnGroundInternalStateChanged?.Invoke (groundStateInternalState);
+            }
+        }
     }
 
     protected new void OnEnable ()

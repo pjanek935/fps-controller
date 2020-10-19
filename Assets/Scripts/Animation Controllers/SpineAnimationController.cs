@@ -5,21 +5,20 @@ using UnityEngine;
 
 public class SpineAnimationController : MonoBehaviour
 {
-    float rotation = 10f;
-    float duration = 0.3f;
+    [SerializeField] Animator animator;
 
-    public void WallRunLeft ()
+    public void AnimateWallRunLeft ()
     {
-        transform.DOLocalRotate(new Vector3(0, 0, -rotation), duration, RotateMode.Fast);
+        animator.SetTrigger ("Wall Run Left");
     }
 
-    public void WallRunRight()
+    public void AnimateWallRunRight()
     {
-        transform.DOLocalRotate(new Vector3(0, 0, rotation), duration, RotateMode.Fast);
+        animator.SetTrigger ("Wall Run Right");
     }
 
-    public void Default()
+    public void AnimateToDefaultPosition()
     {
-        transform.DOLocalRotate(Vector3.zero, duration*1.5f, RotateMode.Fast);
+        animator.SetTrigger ("Default");
     }
 }

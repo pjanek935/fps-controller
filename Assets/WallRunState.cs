@@ -57,6 +57,21 @@ public class WallRunState : CharacterStateBase
         protected set;
     }
 
+    public WallRunType WallRunSide
+    {
+        get
+        {
+            WallRunType result = WallRunState.WallRunType.NONE;
+
+            if (RaycastResult != null)
+            {
+                result = RaycastResult.WallRunType;
+            }
+
+            return result;
+        }
+    }
+
     public bool ShouldStartWallRunState (CharacterControllerBase parent)
     {
         bool result = false;
