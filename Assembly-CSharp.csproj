@@ -63,81 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BasicMovementAnimationsController.cs" />
-    <Compile Include="Assets\BlinkState.cs" />
-    <Compile Include="Assets\CrouchState.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\GroundState.cs" />
-    <Compile Include="Assets\InAirState.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\RunState.cs" />
-    <Compile Include="Assets\Scripts\ActivatableHitter.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\CameraAnimationController.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\CameraFOVAnimator.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\HeadAnimationController.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\RigController.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\RigWithGunAnimationController.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\RigWithKatanaController.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\ShakeEffect.cs" />
-    <Compile Include="Assets\Scripts\Animation Controllers\SpineAnimationController.cs" />
-    <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\Abilities\BulletTime.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\Abilities\SpecialAbility.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\BlinkingController.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\BurinkeruCharacterController.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\CameraRotationController.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\CharacterComponents.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\CharacterControllerBase.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\CharacterControllerParameters.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\CharacterControllerStateBase.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\Combat\CombatController.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\Combat\KatanaWeapon.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\Combat\RevolverWeapon.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\Combat\WeaponBase.cs" />
     <Compile Include="Assets\Scripts\Character Controller\CombatActionDefinition.cs" />
     <Compile Include="Assets\Scripts\Character Controller\InputBuffer.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerCrouchState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerGroundState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerInAirState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerRunState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerSlideState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\PlayerWallRunState.cs" />
-    <Compile Include="Assets\Scripts\Character Controller\RigManager.cs" />
-    <Compile Include="Assets\Scripts\ClipParticleManager.cs" />
-    <Compile Include="Assets\Scripts\Cuttable.cs" />
     <Compile Include="Assets\Scripts\Enums.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\IntersectionResult.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\Intersector.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\Line.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\Plane.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\TextureRegion.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\Triangle.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Framework\Triangulator.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\SlicedHull.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\Slicer.cs" />
-    <Compile Include="Assets\Scripts\EzySlice\SlicerExtensions.cs" />
-    <Compile Include="Assets\Scripts\GlobalConsts.cs" />
-    <Compile Include="Assets\Scripts\Hittable.cs" />
-    <Compile Include="Assets\Scripts\Hitter.cs" />
-    <Compile Include="Assets\Scripts\Input Manager\BurinkeruInputManager.cs" />
-    <Compile Include="Assets\Scripts\Input Manager\ControllerWrapperBase.cs" />
-    <Compile Include="Assets\Scripts\Input Manager\KeyboardControllerWrapper.cs" />
-    <Compile Include="Assets\Scripts\ObjectCutter.cs" />
-    <Compile Include="Assets\Scripts\OnHitParticleManager.cs" />
-    <Compile Include="Assets\Scripts\ParticlesManagerBase.cs" />
-    <Compile Include="Assets\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Scripts\ProjectileManager.cs" />
-    <Compile Include="Assets\Scripts\SlashParticleManager.cs" />
-    <Compile Include="Assets\Scripts\SlowMoSlashParticleManager.cs" />
     <Compile Include="Assets\Scripts\Support\BlitTexToScreen.cs" />
-    <Compile Include="Assets\Scripts\Support\ColliderExtensions.cs" />
     <Compile Include="Assets\Scripts\Support\ImageProcessing.cs" />
     <Compile Include="Assets\Scripts\Support\InputPrinter.cs" />
     <Compile Include="Assets\Scripts\Support\Tweener\AnimationHandler.cs" />
@@ -151,16 +80,35 @@
     <Compile Include="Assets\Scripts\Support\Tweener\TweenerComponent.cs" />
     <Compile Include="Assets\Scripts\Support\Tweener\ValueTweener.cs" />
     <Compile Include="Assets\Scripts\Support\downres.cs" />
-    <Compile Include="Assets\Scripts\TimeBasedTrailRenderer.cs" />
-    <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\Scripts\VFX\BlinkShadePostProcessEffect.cs" />
     <Compile Include="Assets\Scripts\VFX\CameraPostProcessEffect.cs" />
     <Compile Include="Assets\Scripts\VFX\ColorInversionPostProcessEffect.cs" />
     <Compile Include="Assets\Scripts\VFX\DitherPostProcessEffect.cs" />
-    <Compile Include="Assets\Scripts\VFX\ParticlesManager.cs" />
     <Compile Include="Assets\Scripts\VFX\ScanEffect.cs" />
-    <Compile Include="Assets\SlideState.cs" />
-    <Compile Include="Assets\WallRunState.cs" />
+    <Compile Include="Assets\ShakeEffect.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\BasicMovementAnimationsController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\BlinkState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\CameraFOVAnimator.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\CameraRotationController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\CharacterControllerBase.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\CharacterControllerStateBase.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\ColliderExtensions.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\CrouchState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\GroundState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\HeadAnimationController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\InAirState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Input Manager\BurinkeruInputManager.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Input Manager\ControllerWrapperBase.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Input Manager\KeyboardControllerWrapper.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\PlayerGroundState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\PlayerInAirState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\PlayerSlideState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\PlayerWallRunState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\RunState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\SlideState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\SpineAnimationController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\WallRunState.cs" />
     <None Include="Assets\Shaders\Post Process\Dither.shader" />
     <None Include="Assets\Shaders\Retro3D\Retro3DSpecularAmbientDiffuse.shader" />
     <None Include="Assets\Shaders\Post Process\BlinkShade.shader" />
@@ -175,7 +123,6 @@
     <None Include="Assets\Shaders\Retro3D\Retro3DAmbientDiffuse.shader" />
     <None Include="Assets\Shaders\Retro3D\Retro3DDiffuse.shader" />
     <None Include="Assets\Shaders\Post Process\CRTDistortion.shader" />
-    <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\Shaders\Retro3D\Retro3DLightResolution.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -359,9 +306,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.7f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>D:/Unity Projects/fps-controller/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.7f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
