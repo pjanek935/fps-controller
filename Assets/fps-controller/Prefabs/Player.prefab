@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 7235037412141207815}
   - component: {fileID: 7235037412141207808}
   - component: {fileID: 7235037412141207811}
+  - component: {fileID: 1307333386}
   m_Layer: 2
   m_Name: First Person Camera
   m_TagString: MainCamera
@@ -125,7 +126,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 70
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -181,7 +182,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21c8c3cbf52f064d8300acd70b07dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1307333386}
   camera: {fileID: 7235037412141207814}
+  fov: 60
+--- !u!95 &1307333386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235037412141207812}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a667eeec4288a9e4ca3c6f5cc14693e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7235037412409470483
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headAnimationController: {fileID: 7235037414132514391}
   spineAnimationController: {fileID: 7235037412026284322}
+  cameraFOVAnimator: {fileID: 7235037412141207811}
   minYVelocityToAnimateLanding: 5
 --- !u!1 &7235037414132514410
 GameObject:

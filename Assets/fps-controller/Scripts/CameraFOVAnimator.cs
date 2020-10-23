@@ -2,20 +2,15 @@
 
 public class CameraFOVAnimator : MonoBehaviour
 {
-    [SerializeField] new Camera camera;
+    [SerializeField] Animator animator;
 
-    public float CurrentFOV
+    public void IncreaseFOV ()
     {
-        get { return camera.fieldOfView; }
+        animator.SetBool ("FOV Increased", true);
     }
 
-    public void SetFOV (float fov, float speed = 0.45f)
+    public void SetDefaultFOV ()
     {
-        //DOTween.To(() => camera.fieldOfView, x => camera.fieldOfView = x, fov, speed);
-    }
-
-    public void ResetToDefault (float speed = 0.45f)
-    {
-       // DOTween.To(() => camera.fieldOfView, x => camera.fieldOfView = x, 60f, speed);
+        animator.SetBool ("FOV Increased", false);
     }
 }

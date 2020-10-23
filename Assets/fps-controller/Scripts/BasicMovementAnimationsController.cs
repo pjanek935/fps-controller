@@ -5,6 +5,7 @@ public class BasicMovementAnimationsController : MonoBehaviour
 {
     [SerializeField] HeadAnimationController headAnimationController;
     [SerializeField] SpineAnimationController spineAnimationController;
+    [SerializeField] CameraFOVAnimator cameraFOVAnimator;
 
     [SerializeField] float minYVelocityToAnimateLanding = 1f;
 
@@ -72,10 +73,30 @@ public class BasicMovementAnimationsController : MonoBehaviour
         {
             spineAnimationController.AnimateToDefaultPosition ();
         }
+        else if (typeof (GroundState).IsAssignableFrom (newState.GetType ()))
+        {
+            GroundState groundState = (GroundState) newState;
+            onGroundStateInternalStateChaged (groundState.InternalState);
+        }
+        else if (typeof (SlideState).IsAssignableFrom (newState.GetType ()))
+        {
+            headAnimationController.SetCrouch (true);
+        }
     }
 
     void onGroundStateInternalStateChaged (GroundState.GroundStateInternalState groundStateInternalState)
     {
-
+        bool isCrouchOn = groundStateInternalState == GroundState.GroundStateInternalState.CROUCH;
+        headAnimationController.SetCrouch (isCrouchOn);
+        bool fovIncreased = groundStateInternalState == GroundState.GroundStateInternalState.RUN;
+        
+        if (fovIncreased)
+        {
+            cameraFOVAnimator.IncreaseFOV ();
+        }
+        else 
+        {
+            cameraFOVAnimator.SetDefaultFOV ();
+        }
     }
 }
