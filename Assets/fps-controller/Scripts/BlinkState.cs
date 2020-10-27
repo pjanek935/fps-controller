@@ -2,8 +2,8 @@
 
 public class BlinkState : CharacterStateBase
 {
-    [SerializeField] float speed;
-    [SerializeField] float duration;
+    [SerializeField] float speed = 100f;
+    [SerializeField] float duration = 0.5f;
     [SerializeField] int maxBlinks = 3;
 
     [Tooltip ("How fast one blink charge will refill.")]

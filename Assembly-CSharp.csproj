@@ -63,11 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\downres-camera\BlitTexToScreen.cs" />
-    <Compile Include="Assets\downres-camera\CameraPostProcessEffect.cs" />
-    <Compile Include="Assets\downres-camera\DitherPostProcessEffect.cs" />
-    <Compile Include="Assets\downres-camera\ImageProcessing.cs" />
-    <Compile Include="Assets\downres-camera\downres.cs" />
     <Compile Include="Assets\fps-controller\Scripts\BasicMovementAnimationsController.cs" />
     <Compile Include="Assets\fps-controller\Scripts\BlinkState.cs" />
     <Compile Include="Assets\fps-controller\Scripts\CameraFOVAnimator.cs" />
@@ -91,21 +86,6 @@
     <Compile Include="Assets\fps-controller\Scripts\SlideState.cs" />
     <Compile Include="Assets\fps-controller\Scripts\SpineAnimationController.cs" />
     <Compile Include="Assets\fps-controller\Scripts\WallRunState.cs" />
-    <None Include="Assets\downres-camera\Post Process\Dither.shader" />
-    <None Include="Assets\downres-camera\Retro3D\Retro3DSpecularAmbientDiffuse.shader" />
-    <None Include="Assets\downres-camera\Post Process\BlinkShade.shader" />
-    <None Include="Assets\downres-camera\Post Process\Scan.shader" />
-    <None Include="Assets\downres-camera\Post Process\CRTDiffuse.shader" />
-    <None Include="Assets\downres-camera\Post Process\ChromaticAberration.shader" />
-    <None Include="Assets\downres-camera\Retro3D\Retro3DUnlitWithShadow.shader" />
-    <None Include="Assets\downres-camera\Retro3D\Retro3DUnlit.shader" />
-    <None Include="Assets\downres-camera\Post Process\Blur.shader" />
-    <None Include="Assets\downres-camera\Post Process\ColorInversion.shader" />
-    <None Include="Assets\downres-camera\Post Process\CombineTwoRenderTextures.shader" />
-    <None Include="Assets\downres-camera\Retro3D\Retro3DAmbientDiffuse.shader" />
-    <None Include="Assets\downres-camera\Retro3D\Retro3DDiffuse.shader" />
-    <None Include="Assets\downres-camera\Post Process\CRTDistortion.shader" />
-    <None Include="Assets\downres-camera\Retro3D\Retro3DLightResolution.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

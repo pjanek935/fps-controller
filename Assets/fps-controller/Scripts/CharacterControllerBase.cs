@@ -8,7 +8,7 @@ public class CharacterControllerBase : MonoBehaviour
     public delegate void OnStateChangedEventHandler (CharacterStateBase newState, CharacterStateBase prevState);
     public event OnStateChangedEventHandler OnStateChanged;
 
-    [SerializeField] Camera fpsCamera;
+    [SerializeField] Camera fpsCamera = null;
 
     protected CharacterStateBase mainMovementState;
     protected int layerMaskToCheckForPushback = 0;
@@ -221,7 +221,7 @@ public class CharacterControllerBase : MonoBehaviour
                 mainMovementState = newState;
                 enterState (newState, previousStateType);
 
-                Debug.Log ("new state: " + newState.GetType ().ToString ());
+                //Debug.Log ("new state: " + newState.GetType ().ToString ());
             }
         }
     }
@@ -250,7 +250,7 @@ public class CharacterControllerBase : MonoBehaviour
                 mainMovementState = (CharacterStateBase) newState;
                 enterState (mainMovementState, prevStateType);
 
-                Debug.Log ("new state: " + newState.GetType ().ToString ());
+                //Debug.Log ("new state: " + newState.GetType ().ToString ());
                 OnStateChanged?.Invoke (mainMovementState, prevState);
             }
         }

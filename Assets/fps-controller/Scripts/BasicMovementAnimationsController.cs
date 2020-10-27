@@ -3,9 +3,9 @@
 [RequireComponent (typeof (CharacterControllerBase))]
 public class BasicMovementAnimationsController : MonoBehaviour
 {
-    [SerializeField] HeadAnimationController headAnimationController;
-    [SerializeField] SpineAnimationController spineAnimationController;
-    [SerializeField] CameraFOVAnimator cameraFOVAnimator;
+    [SerializeField] HeadAnimationController headAnimationController = null;
+    [SerializeField] SpineAnimationController spineAnimationController = null;
+    [SerializeField] CameraFOVAnimator cameraFOVAnimator = null;
 
     [SerializeField] float minYVelocityToAnimateLanding = 1f;
 

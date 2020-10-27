@@ -2,7 +2,7 @@
 
 public class CameraFOVAnimator : MonoBehaviour
 {
-    [SerializeField] Animator animator;
+    [SerializeField] Animator animator = null;
 
     public void IncreaseFOV ()
     {
