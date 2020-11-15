@@ -63,29 +63,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\fps-controller\Scripts\BasicMovementAnimationsController.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\BlinkState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\CameraFOVAnimator.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\CameraRotationController.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\CharacterControllerBase.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\CharacterControllerStateBase.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Animation Controllers\BasicMovementAnimationsController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Animation Controllers\CameraFOVAnimator.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Animation Controllers\HeadAnimationController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\Animation Controllers\SpineAnimationController.cs" />
     <Compile Include="Assets\fps-controller\Scripts\ColliderExtensions.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\CrouchState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\GroundState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\HeadAnimationController.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\InAirState.cs" />
     <Compile Include="Assets\fps-controller\Scripts\Input Manager\BurinkeruInputManager.cs" />
     <Compile Include="Assets\fps-controller\Scripts\Input Manager\ControllerWrapperBase.cs" />
     <Compile Include="Assets\fps-controller\Scripts\Input Manager\KeyboardControllerWrapper.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\PlayerGroundState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\PlayerInAirState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\PlayerSlideState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\PlayerWallRunState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\RunState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\SlideState.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\SpineAnimationController.cs" />
-    <Compile Include="Assets\fps-controller\Scripts\WallRunState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\BlinkState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\CameraRotationController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\CharacterControllerBase.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\CharacterControllerStateBase.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\CrouchState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\GroundState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\InAirState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\PlayerController.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\PlayerGroundState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\PlayerInAirState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\PlayerSlideState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\PlayerWallRunState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\RunState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\SlideState.cs" />
+    <Compile Include="Assets\fps-controller\Scripts\States\WallRunState.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
